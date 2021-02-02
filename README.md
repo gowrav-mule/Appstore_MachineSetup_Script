@@ -147,6 +147,10 @@ code repo downloads
 Example: `/Users/gdeivasigamani/git'
 
 
+### TODO:
+1. For multiple GPG keys the script needs to be modified a little bit, to incorporate the change.
+    As of this version, the script will work, as long as there is only one active gpg key.
+
 
 ### References/Credits:
 1. https://github.com/thoughtbot/laptop/blob/master/mac
