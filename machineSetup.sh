@@ -297,9 +297,10 @@ packageInstallSteps(){
 	    adoptopenjdk
 	    maven
 	    atom
-	    #slack
-	    #github
+	    slack
+	    github
 	    visual-studio-code
+	    intellij-idea
 	)
 
 	PACKAGES=(
