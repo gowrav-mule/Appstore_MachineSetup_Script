@@ -205,7 +205,6 @@ Appstore_seeddata,Appstore_selfservice,Appstore_Sparta,Appstore_vat,Appstore_OM,
 
 localGitRepoDownload(){
 	gitRepoDownload
-	gitRepoInstallation
 }
 
 gitSetup(){
@@ -248,6 +247,10 @@ nvmDirectoryWithNodeInstallation(){
 	append_to_zshrc 'source $(brew --prefix nvm)/nvm.sh'
 	source ~/.zshrc
 	nvm install --lts
+}
+
+installSalesforceExtensionPackForVSCode(){
+	code --install-extension salesforce.salesforcedx-vscode
 }
 
 packageInstallSteps(){
@@ -348,6 +351,7 @@ packageInstallSteps(){
 	installPackage PACKAGES[@]
 
 	nvmDirectoryWithNodeInstallation
+	installSalesforceExtensionPackForVSCode
 	printEmptyLineBeforeThisValue " ######################################## Machine setup complete ########################################"
 
 	# for compilers to find open jdk
@@ -375,7 +379,8 @@ menuPrint(){
  3) Setup GIT Remote setup: Add SSH Keys to remote GIT
  4) Setup GIT local setup: Generate GPG Keys
  5) Setup GIT Remote setup: Add GPG Keys to remote GIT
- 6) Type 6, to do the entre operations from 2 to 5
+ 6) Type 6, to do git source code repo downloads alone
+ 7) Type 7, to do the entire GIT related operation from 2 to 6
 
  M) Type (M)enu, to see this menu again
  E) Type (E)xit to exit this process
@@ -439,6 +444,7 @@ do
         2)
 				#print"username" username
 				getRSAGPGName
+				mainMenuPrinter "${userChoice}"
                 ;;
         3)
                 echo "See you again!"
@@ -453,6 +459,10 @@ do
                 mainMenuPrinter "${userChoice}"
                 ;;
         6)
+				localGitRepoDownload
+                mainMenuPrinter "${userChoice}"
+                ;;
+        7)
                 allGitRelatedOperations
                 mainMenuPrinter "${userChoice}"
                 ;;
