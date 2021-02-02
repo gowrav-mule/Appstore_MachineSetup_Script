@@ -22,8 +22,7 @@ If you are really intrested in all the steps of the script please see below
 ------------------------------
 
 ### How the Menu looks like when run
-  ![main menu screen] (https://git.soma.salesforce.com/gdeivasigamani/Appstore_MachineSetup_Script/blob/master/visuals/Images/machineMainMenu.png)
-
+  ![Script casks](https://git.soma.salesforce.com/gdeivasigamani/Appstore_MachineSetup_Script/blob/master/visuals/Images/machineMainMenu.png)
 ### Software Installation:
 
 1. Scripts check if your machine is 32 or 64 Bit architecture
