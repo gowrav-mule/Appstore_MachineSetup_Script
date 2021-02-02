@@ -21,6 +21,8 @@ Thats it !!!!
 If you are really intrested in all the steps of the script please see below
 ------------------------------
 
+### How the Menu looks like when run
+  ![Script casks](https://git.soma.salesforce.com/gdeivasigamani/Appstore_MachineSetup_Script/blob/master/visuals/Images/machineMainMenu.png)
 ### Software Installation:
 
 1. Scripts check if your machine is 32 or 64 Bit architecture
@@ -143,6 +145,8 @@ code repo downloads
 2. The user can give a custom directoy to install the repo's that are going to be cloned, or else, the repo's above repo's will be cloned to the default directory, i.e. <br/>
 `USER_HOME/git` <br/>
 Example: `/Users/gdeivasigamani/git'
+
+
 
 ### References/Credits:
 1. https://github.com/thoughtbot/laptop/blob/master/mac
